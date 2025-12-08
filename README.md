@@ -1,4 +1,3 @@
- <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -136,9 +135,9 @@ div.b {
 </header>
 
   <nav>
-    <a href="file:///Macintosh HD/Users/leoaguilar/Downloads/HOME.html"><a href="file:///Users/leoaguilar/Downloads/HOME.html" target="file:///Users/leoaguilar/Downloads/HOME.html"></a></a>
-    <a href="file:///Macintosh HD/Users/leoaguilar/Downloads/CATALOGO.html"></a>
-    <a href="file:///Macintosh HD/Users/leoaguilar/Downloads/SUCURSALES.html"></a>
+    <a href="file:///Macintosh HD/Users/d/Downloads/HOME.html"><a href="file:///Users/fr/Downloads/HOME.html" target="file:///Users/lfr/Downloads/HOME.html"></a></a>
+    <a href="file:///Macintosh HD/Users/f/Downloads/CATALOGO.html"></a>
+    <a href="file:///Macintosh HD/Users/fr/Downloads/SUCURSALES.html"></a>
   </nav>
 	
 	<section>
@@ -221,112 +220,72 @@ div.b {
 		
 		<div class="a">
       <h1 style="background-
-<body>
-<div class="b">
-<h1 style="background-color:F54927;"> ¿Quieres formar parte de esto? ¡registrate! </h1>
-<form> 
-<fieldset>
-    <legend> Llena el siguiente formulario </legend>
-<label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="usuario_nombre" placeholder="Nombre (s)">
-    <input type="text" id="apellido Paterno" name="usuario_apellido" placeholder="Apellido Paterno">
-    <input type="text" id="apellido Materno" name="usuario_apellido" placeholder="Apellido Materno">
-	<br>
-    <br>
-    <label for="correo">Correo electrónico:</label>
-	<input type="email" id="correo" name="correo" placeholder="ejemplo@.com" required>
-	<br>
-    <br> 
-<label for="telefono">Teléfono:</label>
-<input type="tel" id="telefono" name="telefono" placeholder="12-223-2987" required>
-</fieldset>
-	<br>
-    <br> 
-    <fieldset>
-    <legend>¿Quieres comprar algo?</legend>
-    <label for="street">Domicilio</label>
-    <input type= user id="street" name="calle"placeholder="Usa numeros y letras">
-    <label for="Interior/exterior number">
-    Número interior/exterior</label>
-    <input type= password id="Interior/exterior number" name="Numero interior
-    /exterior"placeholder="Usa numeros y letras">
-    <br>
-     <label for="Cologne">Colonia</label>
-    <input type= user id="Cologne" name="Colonia"placeholder="Usa numeros y letras">
-    <label for="City">Ciudad</label>
-    <input type= user id="City" name="Ciudad"placeholder="Usa numeros y letras">
-    <br>
-    <label for="Zip code">Código postal</label>
-    <input type= user id="Zip code" name="Código postal"placeholder="Usa numeros y letras">
-    </fieldset>
-    <br>
-    <br>
+<body><div class="b">
+    <h1 style="background-color:floralwhite;">
+        Se parte de esto
+    </h1>
+
+    <form id="Travisform"> 
+        <fieldset>
+            <legend>Travis shop</legend>
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="usuario_nombre" placeholder="Nombre (s)">
+            <br><br>
+            
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@.com" required>
+            <br><br>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="12-223-2987" required>
+        </fieldset>
+        <br><br>
+        <button type="submit">Enviar Formulario</button>
+    </form>
+</div>
+
+<script>
+    // URL de tu Google Apps Script
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby6vVJAMJCL36N86EmLBs-AuX483lWFwz3GWlyjuTrjvPXlviDDAdJAk2CGLIm9WJ0y/exec';
     
-    <label for="Comentarios o Notas Extra"> ¿Tienes alguna queja o sugerencia? </label>
-    <textarea id="Comentarios o Notas Extra" name="usuario_mensaje" rows="4" cols="50"></textarea>
-	<br>
-    <br>
-    <label> ¿Facturarás tu pedido? </label><br>
-    
-    <input type="radio" id="opcion1" name="opcion_unica" value="a">
-    <label for="opcion1">SI</label>
-    
-    <input type="radio" id="opcion2" name="opcion_unica" value="b">
-    <label for="opcion2">NO</label>
-    <br>
-    <br>
-    <fieldset>
-    <legend> Factura aquí </legend>
-    <label for="RFC">RFC</label>
-    <input type= user id="RFC" name="RFC"placeholder="Usa numeros y letras">
-    <label for="Name or company name"> Razón social </label>
-    <input type= password id="Name or company name" name="Nombre o razón social"placeholder="Usa numeros y letras">
-    </fieldset>
-    <br>
-    <br>
-    <label>Método de pago</label><br>
-    
-    <input type="radio" id="opcion1" name="opcion_unica" value="a">
-    <label for="opcion1">Tarjeta de debito</label>
- 	 <input type="radio" id="opcion2" name="opcion_unica" value="b">
-    <label for="opcion2">PayPal</label>
-    <input type="radio" id="opcion3" name="opcion_unica" value="b">
-    <label for="opcion3">Tarjeta de credito</label>
-    <br>
-    <br>
-    <fieldset>
-    <legend> Datos obligatorios </legend>
-    <label>Acepto términos y condiciones</label><br>
-    <input type="radio" id="opcion1" name="opcion_unica" value="a">
-    <label for="opcion1">SI</label>
-    <input type="radio" id="opcion2" name="opcion_unica" value="b">
-    <label for="opcion2">NO</label>
-      <br>
-    <label>Confirmo que mis datos son correctos</label><br>
-    <input type="radio" id="opcion1" name="opcion_unica" value="a">
-    <label for="opcion1">SI</label>
-    <input type="radio" id="opcion2" name="opcion_unica" value="b">
-    <label for="opcion2">NO</label>
-      <br>
-    <label> Acepto recibir promociones, noticias y notificaciones </label><br>
-    <input type="radio" id="opcion1" name="opcion_unica" value="a">
-    <label for="opcion1">SI</label>
-    <input type="radio" id="opcion2" name="opcion_unica" value="b">
-    <label for="opcion2">NO</label>
-    </fieldset>
-    <br>
-    <br>
-   <button type="submit">Enviar Formulario</button>
-</form>
+    // Obtenemos el formulario por su ID
+    const form = document.getElementById('Travisform');
+
+    form.addEventListener('submit', e => {
+        e.preventDefault(); // Detiene el envío normal (para que no te redirija)
+        
+        // Desactivamos el botón y mostramos un mensaje temporal
+        const submitButton = form.querySelector('button[type="submit"]');
+        submitButton.disabled = true;
+        submitButton.textContent = 'Enviando...';
+        
+        // Enviamos los datos usando Fetch API
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                // El script devuelve JSON con {"result": "success"}
+                if (response.ok) {
+                    // Si es exitoso, mostramos una alerta y limpiamos el formulario.
+                    alert('¡Gracias! Por ser parte de esto.');
+                    form.reset(); 
+                } else {
+                    alert('Error: No se pudo conectar con el servidor de Google.');
+                }
+            })
+            .catch(error => {
+                alert('Ocurrió un error al enviar: ' + error.message);
+                console.error('Error!', error.message);
+            })
+            .finally(() => {
+                // Restauramos el botón después de la operación
+                submitButton.disabled = false;
+                submitButton.textContent = 'Enviar Formulario';
+            });
+    });
+</script>
 
 <footer>
-    
+    <p style="background-color:floralwhite">©️ 2025 Travis shop. Todos los derechos reservados.</p>
 </footer>
-
-</body>
-</html>
-		
-    <p style=background-color:floralwhite>©️ 2025 TravisFans ADJNL Derechos reservados.</p>
-  </footer>
 </body>
 </html>
