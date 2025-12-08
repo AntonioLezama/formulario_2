@@ -247,7 +247,7 @@ div.b {
 
 <script>
     // URL de tu Google Apps Script
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxlTJPHi0xdxP1EC0qZ3QjAPaJqoRy65l_w5MFb6RwLqM4cIX1EDK8NixLZ98UXr4azTw/exec';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxoDyqqPGTNRklHvoyHKwbZ3quLDhvGG5l8JaVPXrgDz5P2-cFQIa9FiPXv4Sn3OoNhAA/exec';
     
     // Obtenemos el formulario por su ID
     const form = document.getElementById('Travisform');
