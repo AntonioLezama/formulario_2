@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -170,9 +170,9 @@ div.b {
         const btnPerro = document.getElementById('btnPerro');
 
         // URLs de las imágenes que vamos a cargar
-        const urlElefante = 'https://i0.wp.com/yonerone.com.mx/wp-content/uploads/2021/03/150.la-vida-real.jpg?w=900&ssl=1';
-        const urlGato = 'https://i0.wp.com/yonerone.com.mx/wp-content/uploads/2021/03/23.graffitti.jpg?w=709&ssl=1';
-        const urlPerro = 'https://yonerone.com.mx/wp-content/uploads/2025/02/f18.jpg';
+        const urlElefante = 'https://m.media-amazon.com/images/I/81nFF-rXdRL._AC_SX679_.jpg';
+        const urlGato = 'https://gcp-images.merchbar.com/eyJidWNrZXQiOiJtZXJjaGJhci1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0LzU5LzI0OTMveTRjZHRzMDEvWTRDRFRTMDEuSlBHIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxNDAwLCJmaXQiOiJjb3ZlciJ9fX0=?format=webp';
+        const urlPerro = 'https://blackroom.boutique/wp-content/uploads/2024/04/travis-scott-utopia.jpeg';
 
         /**
          * Función que carga una imagen desde una URL y la dibuja en el canvas.
