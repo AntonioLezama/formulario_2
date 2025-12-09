@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Álbumes de Travis Scott</title>
+  <title>Cataloco - Padel</title>
   <style>
-    /* Definición de variables de color */
     :root {
-      --negro: #AD0000;
+      --negro: #050505;
       --azul: #F54927;
-      --hueso: #FFFFFF;
-      --marfil: #F54927; 
-      --blanco: #FFFFFF;
+      --hueso: #839192;
+      --marfil: #F54927;
+      --blanco: #AD0000;
     }
 
     body {
@@ -47,84 +46,26 @@
       color: var(--azul);
     }
 
-    /* Estilo para el contenedor principal de contenido */
     main {
       padding: 2rem;
     }
 
-    /* Estilo para el canvas donde se dibujará la imagen */
-    canvas {
-        border: 5px solid var(--negro);
-        border-radius: 8px;
-        background-color: var(--negro);
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        max-width: 90%;
-        display: block; /* Asegura que el canvas se centre correctamente con el div padre */
-        margin: 0 auto;
+    .producto {
+      background-color: var(--blanco);
+      margin: 1rem auto;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      max-width: 800px;
     }
 
-    /* Estilo para los botones de control */
-    .controles {
-        margin-top: 25px;
-        display: flex;
-        gap: 15px;
-        justify-content: center; /* Centra los botones */
-    }
-    
-    button {
-        padding: 12px 25px;
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
-        border: none;
-        border-radius: 6px;
-        color: var(--blanco);
-        background-color: var(--negro); 
-        transition: background-color 0.3s ease, transform 0.2s ease;
+    .producto img {
+      width: 100%;
+      border-radius: 6px;
     }
 
-    button:hover {
-        background-color: var(--azul);
-        transform: scale(1.05);
-    }
-  
-    /* Clases de utilidad para alineación de texto */
-    .center-text { text-align: center; }
-    .left-text   { text-align: left; }
-    .right-text  { text-align: right; }
-    .justify-text{ text-align: justify; }
-
-    /* Estilos para el formulario */
-    form {
-        max-width: 500px;
-        margin: 2rem auto; /* Centra el formulario en la página */
-        padding: 2rem;
-        background-color: floralwhite; /* Usamos floralwhite como estaba en tu código original */
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    label {
-        display: block;
-        margin-bottom: 0.5rem;
-        font-weight: bold;
-    }
-    input[type="text"], input[type="email"], input[type="tel"] {
-        width: 100%;
-        padding: 0.75rem;
-        margin-bottom: 1rem;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box; /* Asegura que el padding no aumente el width */
-    }
-    fieldset {
-        border: 1px solid var(--negro);
-        padding: 1rem;
-        border-radius: 5px;
-    }
-    legend {
-        font-weight: bold;
-        color: var(--azul);
-        padding: 0 0.5rem;
+    .producto h2 {
+      color: var(--azul);
     }
 
     footer {
@@ -134,134 +75,192 @@
       padding: 1rem;
       margin-top: 2rem;
     }
+  
+	/* Estilo para el canvas donde se dibujará la imagen */
+        canvas {
+			
+			
+            border: 5px solid #543a82;
+            border-radius: 8px;
+            background-color: #543a82;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 90%;
+        }
+        .controles {
+            margin-top: 25px;
+            display: flex;
+            gap: 15px; /* Espacio entre botones */
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            border-radius: 6px;
+            color: black;
+            background-color: #ffffff;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        button:hover {
+            background-color: #543a82;
+            transform: scale(1.05);
+        }
+	  
+	  div.a {
+  text-align: center;
+}
 
+div.b {
+  text-align: left;
+}
+
+div.c {
+  text-align: right;
+} 
+
+div.d {
+  text-align: justify;
+  
+div.b {
+  text-align: left;
+}
 	</style>
 </head>
 <body>
 	
+	
 <header>
-    <h1> Travis Scott </h1>
-    <p>Sus mejores álbumes y Traks Unreleased </p>
+    <h1> Travis Scott</h1>
+    <p>Sus mejores albumes y tracks unreleased</p>
 </header>
 
-<nav>
-    <a href="file:///Macintosh HD/Users/d/Downloads/HOME.html">Inicio</a>
-    <a href="file:///Macintosh HD/Users/f/Downloads/CATALOGO.html">Catálogo</a>
-    <a href="file:///Macintosh HD/Users/fr/Downloads/SUCURSALES.html">Sucursales</a>
-</nav>
+  <nav>
+    <a href="file:///Macintosh HD/Users/leoaguilar/Downloads/HOME.html"><a href="file:///Users/leoaguilar/Downloads/HOME.html" target="file:///Users/leoaguilar/Downloads/HOME.html">Home</a></a>
+    <a href="file:///Macintosh HD/Users/leoaguilar/Downloads/CATALOGO.html">Catálogo</a>
+    <a href="file:///Macintosh HD/Users/leoaguilar/Downloads/SUCURSALES.html">Contacto</a>
+  </nav>
 	
-<main>
-  <section>
+	<section>
     <article>
-        <!-- Iframe de Spotify -->
-        <iframe data-testid="embed-iframe" style="border-radius:12px; margin-top: 20px;" src="open.spotify.com" width="100%" height="352" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+		<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4MXhiYIRDMGAuvZc5IFTwC?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+		<div class="a">
         
-        <div class="center-text">
-            <h1 style="background-color:var(--blanco); display: inline-block; padding: 0.5rem;"> Sus mejores Álbumes </h1>
-            
-            <canvas id="miCanvas" width="600" height="400">
-                Tu navegador no soporta el elemento canvas.
-            </canvas>
-           
-            <div class="controles"> 
-                <button id="btnElefante">AstroWorld</button>
-                <button id="btnGato">Rodeo</button>
-                <button id="btnPerro">Utopia</button>
-            </div>
-        </div>
-        
-        <!-- Script para manejar el Canvas y los botones -->
-        <script>
-            // --- LÓGICA DE JAVASCRIPT DEL CANVAS ---
-
-            const canvas = document.getElementById('miCanvas');
-            const context = canvas.getContext('2d'); 
-            const btnElefante = document.getElementById('btnElefante');
-            const btnGato = document.getElementById('btnGato');
-            const btnPerro = document.getElementById('btnPerro');
-
-            const urlElefante = 'm.media-amazon.com';
-            const urlGato = 'gcp-images.merchbar.com';
-            const urlPerro = 'blackroom.boutique';
-
-            function cargarImagenEnCanvas(url) {
-                const imagen = new Image(); 
-                imagen.src = url; 
-
-                imagen.onload = () => {
-                    context.clearRect(0, 0, canvas.width, canvas.height);
-                    context.drawImage(imagen, 0, 0, canvas.width, canvas.height);
-                };
-
-                imagen.onerror = () => {
-                    console.error('Error al cargar la imagen desde: ' + url);
-                    context.clearRect(0, 0, canvas.width, canvas.height);
-                    context.font = "16px Arial";
-                    context.fillStyle = "red";
-                    context.fillText("No se pudo cargar la imagen.", 20, 40);
-                };
-            }
-
-            btnElefante.addEventListener('click', () => {
-                cargarImagenEnCanvas(urlElefante);
-            });
-
-            btnGato.addEventListener('click', () => {
-                cargarImagenEnCanvas(urlGato);
-            });
-
-            btnPerro.addEventListener('click', () => {
-                cargarImagenEnCanvas(urlPerro);
-            });
-            
-            context.font = "16px Arial"; 
-            context.fillStyle = "white"; 
-            context.textAlign = "center";
-            context.fillText("Selecciona un álbum para ver la portada", canvas.width / 2, canvas.height / 2);
-        </script>
-    </article>
-
-    <!-- Sección del formulario -->
-    <div class="left-text">
-        <h1 style="background-color:floralwhite; padding: 0.5rem; display: inline-block;">
-            Se parte de esto
-        </h1>
-
-        <form id="Travisform"> 
-            <fieldset>
-                <legend>Travis shop</legend>
-                
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="usuario_nombre" placeholder="Nombre (s)">
-                
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" name="correo" placeholder="ejemplo@.com" required>
-                
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="12-223-2987" required>
-            </fieldset>
-            <br>
-            <button type="submit">Enviar Formulario</button>
-        </form>
+     <h1 style="background-color:floralwhite;">Álbumes impresindibles</h1>
+      
+<canvas id="miCanvas" width="600" height="400">
+        Tu navegador no soporta el elemento canvas.
+    </canvas>
+   <div class="w-33"
+			<div class="controles"> 
+     <!-- Tres botones, cada uno con un ID único -->
+		<button id="btnElefante">AstroWorld</button>
+        <button id="btnGato">Rodeo</button>
+        <button id="btnPerro">Utopia</button>
     </div>
-  </section>
-</main>
-    
-<footer>
-    <p>&copy; 2025 Travis Scott Fan Page</p>
-</footer>
 
-<!-- Script para manejar el Formulario con Google Apps Script -->
+<script>
+        // --- LÓGICA DE JAVASCRIPT ---
+
+        // 1. Obtenemos referencias a nuestros elementos HTML
+        const canvas = document.getElementById('miCanvas');
+        const context = canvas.getContext('2d'); // El contexto 2D es la API para dibujar
+
+        const btnElefante = document.getElementById('btnElefante');
+        const btnGato = document.getElementById('btnGato');
+        const btnPerro = document.getElementById('btnPerro');
+
+        // URLs de las imágenes que vamos a cargar
+        const urlElefante = 'https://m.media-amazon.com/images/I/81nFF-rXdRL._UF1000,1000_QL80_.jpg';
+        
+        const urlGato = 'https://gcp-images.merchbar.com/eyJidWNrZXQiOiJtZXJjaGJhci1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0LzU5LzI0OTMveTRjZHRzMDEvWTRDRFRTMDEuSlBHIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxNDAwLCJmaXQiOiJjb3ZlciJ9fX0=?format=webp';
+        
+        const urlPerro = 'https://m.media-amazon.com/images/I/51O82c0RGNL._UF1000,1000_QL80_.jpg';
+
+        /**
+         * Función que carga una imagen desde una URL y la dibuja en el canvas.
+         * @param {string} url - La dirección de la imagen a cargar.
+         */
+        function cargarImagenEnCanvas(url) {
+            const imagen = new Image(); // Creamos un nuevo objeto de imagen
+            imagen.src = url; // Le asignamos la URL
+
+            // Esperamos a que la imagen se cargue completamente antes de dibujarla
+            imagen.onload = () => {
+                // Limpiamos el canvas por si había una imagen anterior
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                // Dibujamos la nueva imagen, ajustándola al tamaño del canvas
+                context.drawImage(imagen, 0, 0, canvas.width, canvas.height);
+            };
+
+            // Manejo de errores por si la imagen no se puede cargar
+            imagen.onerror = () => {
+                console.error(`Error al cargar la imagen desde: ${url}`);
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                context.font = "16px Arial";
+                context.fillStyle = "red";
+                context.fillText("No se pudo cargar la imagen.", 20, 40);
+            };
+        }
+
+        // 3. Asignamos los eventos de clic a cada botón
+        btnElefante.addEventListener('click', () => {
+            cargarImagenEnCanvas(urlElefante);
+        });
+
+        btnGato.addEventListener('click', () => {
+            cargarImagenEnCanvas(urlGato);
+        });
+
+        btnPerro.addEventListener('click', () => {
+            cargarImagenEnCanvas(urlPerro);
+        });
+        
+        // Opcional: Mostramos un mensaje inicial en el canvas
+        context.font = "10px Arial";
+        context.textAlign = "center";
+        context.fillText("Selecciona una pala para cargar su imagen", canvas.width / 2, canvas.height / 2);
+    </script>
+		
+		<div class="a">
+      <h1 style="background-
+<body>
+<div class="b">
+    <h1 style="background-color:floralwhite;">
+        ¿Quieres unirte y enterarte más? ¡Registrate!
+    </h1>
+
+    <form id="padelForm"> 
+        <fieldset>
+            <legend>Forma parte aquí</legend>
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="usuario_nombre" placeholder="Nombre (s)">
+            <br><br>
+            
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@.com" required>
+            <br><br>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="12-223-2987" required>
+        </fieldset>
+        <br><br>
+        <button type="submit">Enviar Formulario</button>
+    </form>
+</div>
+
 <script>
     // URL de tu Google Apps Script
-    const scriptURL = 'script.google.com';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby0v25CsuegwkKeA4yYShCytO_vV3lL0-Bw_OaKI-gwS45jxNcd9WNRiObuhl3P1fLAIA/exec';
     
     // Obtenemos el formulario por su ID
-    const form = document.getElementById('Travisform');
+    const form = document.getElementById('padelForm');
 
     form.addEventListener('submit', e => {
-        e.preventDefault(); // Detiene el envío normal
+        e.preventDefault(); // Detiene el envío normal (para que no te redirija)
         
+        // Desactivamos el botón y mostramos un mensaje temporal
         const submitButton = form.querySelector('button[type="submit"]');
         submitButton.disabled = true;
         submitButton.textContent = 'Enviando...';
@@ -269,21 +268,29 @@
         // Enviamos los datos usando Fetch API
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-                console.log('Exito!', response);
-                submitButton.disabled = false;
-                submitButton.textContent = 'Enviado con exito';
-                form.reset(); // Limpia el formulario después del envío
-                setTimeout(() => {
-                    submitButton.textContent = 'Enviar Formulario';
-                }, 3000);
+                // El script devuelve JSON con {"result": "success"}
+                if (response.ok) {
+                    // Si es exitoso, mostramos una alerta y limpiamos el formulario.
+                    alert('¡Gracias! Tu registro ha sido enviado con éxito.');
+                    form.reset(); 
+                } else {
+                    alert('Error: No se pudo conectar con el servidor de Google.');
+                }
             })
             .catch(error => {
+                alert('Ocurrió un error al enviar: ' + error.message);
                 console.error('Error!', error.message);
+            })
+            .finally(() => {
+                // Restauramos el botón después de la operación
                 submitButton.disabled = false;
-                submitButton.textContent = 'Error al enviar';
+                submitButton.textContent = 'Enviar Formulario';
             });
     });
 </script>
 
+<footer>
+    <p style="background-color:floralwhite">©️ 2025 Travis shop. Todos los derechos reservados.</p>
+</footer>
 </body>
 </html>
