@@ -1,88 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cataloco - Padel</title>
-  <style>
-    :root {
-      --negro: #050505;
-      --azul: #543a82;
-      --hueso: #839192;
-      --marfil: #32744d;
-      --blanco: #FFFFFF;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cataloco - Padel</title>
+    <style>
+        /* --- NUEVOS COLORES: CAFÉS Y BEIGES --- */
+        :root {
+            --cafe-oscuro: #543A3A;   /* Reemplaza --negro / --azul */
+            --beige-claro: #F5F5DC;   /* Reemplaza --blanco */
+            --marron-suave: #C4A484;  /* Reemplaza --hueso / --marfil */
+            --cafe-medio: #A0522D;    /* Un tono terroso para acentos */
+            --crema-fondo: #FAF0E6;   /* Fondo general, más cálido */
+        }
 
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--marfil);
-      color: var(--negro);
-    }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--crema-fondo); /* Fondo general */
+            color: var(--cafe-oscuro); /* Texto principal */
+        }
 
-    header {
-      background-color: var(--azul);
-      color: var(--blanco);
-      padding: 1rem 2rem;
-      text-align: center;
-    }
+        header {
+            background-color: var(--cafe-oscuro); /* Café Oscuro */
+            color: var(--beige-claro); /* Texto Beige Claro */
+            padding: 1rem 2rem;
+            text-align: center;
+        }
 
-    nav {
-      background-color: var(--negro);
-      padding: 0.5rem 2rem;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-    }
+        nav {
+            background-color: var(--cafe-medio); /* Café medio para la barra de navegación */
+            padding: 0.5rem 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
 
-    nav a {
-      color: var(--blanco);
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
+        nav a {
+            color: var(--beige-claro); /* Texto Beige Claro */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
 
-    nav a:hover {
-      color: var(--azul);
-    }
+        nav a:hover {
+            color: var(--marron-suave); /* Marrón suave al pasar el ratón */
+        }
 
-    main {
-      padding: 2rem;
-    }
+        main {
+            padding: 2rem;
+        }
 
-    .producto {
-      background-color: var(--blanco);
-      margin: 1rem auto;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      max-width: 800px;
-    }
-
-    .producto img {
-      width: 100%;
-      border-radius: 6px;
-    }
-
-    .producto h2 {
-      color: var(--azul);
-    }
-
-    footer {
-      background-color: var(--negro);
-      color: var(--blanco);
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  
-	/* Estilo para el canvas donde se dibujará la imagen */
-        canvas {
-			
-			
-            border: 5px solid #543a82;
+        .producto {
+            background-color: var(--beige-claro); /* Blanco/Beige Claro */
+            margin: 1rem auto;
+            padding: 1rem;
             border-radius: 8px;
-            background-color: #543a82;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            max-width: 800px;
+        }
+
+        .producto img {
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        .producto h2 {
+            color: var(--cafe-medio); /* Título en café medio */
+        }
+
+        footer {
+            background-color: var(--cafe-oscuro); /* Café Oscuro */
+            color: var(--beige-claro); /* Texto Beige Claro */
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    
+        /* Estilo para el canvas donde se dibujará la imagen */
+        canvas {
+            border: 5px solid var(--cafe-medio); /* Borde café medio */
+            border-radius: 8px;
+            background-color: var(--marron-suave); /* Fondo del canvas */
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             max-width: 90%;
         }
@@ -98,154 +97,168 @@
             cursor: pointer;
             border: none;
             border-radius: 6px;
-            color: black;
-            background-color: #ffffff;
+            color: var(--cafe-oscuro); /* Texto del botón en café oscuro */
+            background-color: var(--beige-claro); /* Fondo del botón en beige claro */
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
         button:hover {
-            background-color: #543a82;
+            background-color: var(--marron-suave); /* Marrón suave al pasar el ratón */
+            color: var(--cafe-oscuro); /* Texto se mantiene visible */
             transform: scale(1.05);
         }
-	  
-	  div.a {
-  text-align: center;
-}
-
-div.b {
-  text-align: left;
-}
-
-div.c {
-  text-align: right;
-} 
-
-div.d {
-  text-align: justify;
-  
-div.b {
-  text-align: left;
-}
-	</style>
+        /* Estilos de alineación (se mantienen, pero usa las clases) */
+        div.a {
+            text-align: center;
+        }
+        div.b {
+            text-align: left;
+        }
+        div.c {
+            text-align: right;
+        }
+        div.d {
+            text-align: justify;
+        }
+        /* Corrección de estilos inline */
+        .a h1 {
+            background-color: var(--beige-claro); /* Fondo claro para el título */
+        }
+        footer p {
+            background-color: var(--marron-suave) !important; /* Fondo del pie de página */
+            padding: 1rem;
+        }
+        /* Estilos del formulario */
+        form {
+            background-color: var(--beige-claro);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            max-width: 400px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"] {
+             border: 1px solid var(--marron-suave);
+        }
+    </style>
 </head>
 <body>
-	
-	
+    
+    
 <header>
-    <h1> Catálogo Padel</h1>
-    <p>Conoce todas nuestras palas</p>
+    <h1> Travis Shop</h1>
+    <p>Conoce nuestros discos</p>
 </header>
 
-  <nav>
-    <a href="file:///Macintosh HD/Users/leoaguilar/Downloads/HOME.html"><a href="file:///Users/leoaguilar/Downloads/HOME.html" target="file:///Users/leoaguilar/Downloads/HOME.html">Home</a></a>
-    <a href="file:///Macintosh HD/Users/leoaguilar/Downloads/CATALOGO.html">Catálogo</a>
-    <a href="file:///Macintosh HD/Users/leoaguilar/Downloads/SUCURSALES.html">Contacto</a>
-  </nav>
-	
-	<section>
-    <article>
-		<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5dgXKKrU6A9kccwDfANdjS?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-		<div class="a">
-     <h1 style="background-color:floralwhite;">Coleccion palas Lebron 2025</h1>
-      
-<canvas id="miCanvas" width="600" height="400">
-        Tu navegador no soporta el elemento canvas.
-    </canvas>
-   <div class="w-33"
-			<div class="controles"> 
-     <!-- Tres botones, cada uno con un ID único -->
-		<button id="btnElefante">Pala Babolat Technical Vertuo 2.5🎾</button>
-        <button id="btnGato">Pala Babolat Technical Veron🎾</button>
-        <button id="btnPerro">Pala Babolat Technical Viper🎾</button>
-    </div>
+    <nav>
+        <a href="file:///Macintosh HD/Users/oar/Downloads/HOME.html">Travis</a>
+        <a href="file:///Macintosh HD/Users/r/Downloads/CATALOGO.html">Frank Ocean</a>
+        <a href="file:///Macintosh HD/Users/r/Downloads/SUCURSALES.html">Kanye</a>
+    </nav>
+    
+    <section>
+        <article>
+           <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/51EC3I1nQXpec4gDk0mQyP?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="a">
+                <h1 style="background-color:var(--beige-claro);">Travis</h1>
+                     
+                <canvas id="miCanvas" width="600" height="400">
+                    Tu navegador no soporta el elemento canvas.
+                </canvas>
+                <div class="w-33">
+                    <div class="controles"> 
+                        <button id="btnElefante">Utopia</button>
+                        <button id="btnGato">Astroworld</button>
+                        <button id="btnPerro">Rodeo</button>
+                    </div>
+                </div>
 
 <script>
-        // --- LÓGICA DE JAVASCRIPT ---
+    // --- LÓGICA DE JAVASCRIPT ---
 
-        // 1. Obtenemos referencias a nuestros elementos HTML
-        const canvas = document.getElementById('miCanvas');
-        const context = canvas.getContext('2d'); // El contexto 2D es la API para dibujar
+    // 1. Obtenemos referencias a nuestros elementos HTML
+    const canvas = document.getElementById('miCanvas');
+    const context = canvas.getContext('2d'); // El contexto 2D es la API para dibujar
 
-        const btnElefante = document.getElementById('btnElefante');
-        const btnGato = document.getElementById('btnGato');
-        const btnPerro = document.getElementById('btnPerro');
+    const btnElefante = document.getElementById('btnElefante');
+    const btnGato = document.getElementById('btnGato');
+    const btnPerro = document.getElementById('btnPerro');
 
-        // URLs de las imágenes que vamos a cargar
-        const urlElefante = 'https://mipadel.mx/wp-content/uploads/2024/12/pala-babolat-juan-lebron-technical-vertuo-2025-1-1000x1000-1.webp';
-        const urlGato = 'https://mipadel.mx/wp-content/uploads/2024/12/pala-babolat-juan-lebron-technical-veron-2025-1-1000x1000-1.webp';
-        const urlPerro = 'https://mipadel.mx/wp-content/uploads/2024/12/pala-babolat-juan-lebron-technical-viper-2025-1-1100x1100-1.jpg';
+    // URLs de las imágenes que vamos a cargar
+    const urlElefante = '';
+    const urlGato = '';
+    const urlPerro = '';
 
-        /**
-         * Función que carga una imagen desde una URL y la dibuja en el canvas.
-         * @param {string} url - La dirección de la imagen a cargar.
-         */
-        function cargarImagenEnCanvas(url) {
-            const imagen = new Image(); // Creamos un nuevo objeto de imagen
-            imagen.src = url; // Le asignamos la URL
+    /**
+     * Función que carga una imagen desde una URL y la dibuja en el canvas.
+     * @param {string} url - La dirección de la imagen a cargar.
+     */
+    function cargarImagenEnCanvas(url) {
+        const imagen = new Image(); // Creamos un nuevo objeto de imagen
+        imagen.src = url; // Le asignamos la URL
 
-            // Esperamos a que la imagen se cargue completamente antes de dibujarla
-            imagen.onload = () => {
-                // Limpiamos el canvas por si había una imagen anterior
-                context.clearRect(0, 0, canvas.width, canvas.height);
-                // Dibujamos la nueva imagen, ajustándola al tamaño del canvas
-                context.drawImage(imagen, 0, 0, canvas.width, canvas.height);
-            };
+        // Esperamos a que la imagen se cargue completamente antes de dibujarla
+        imagen.onload = () => {
+            // Limpiamos el canvas por si había una imagen anterior
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            // Dibujamos la nueva imagen, ajustándola al tamaño del canvas
+            context.drawImage(imagen, 0, 0, canvas.width, canvas.height);
+        };
 
-            // Manejo de errores por si la imagen no se puede cargar
-            imagen.onerror = () => {
-                console.error(`Error al cargar la imagen desde: ${url}`);
-                context.clearRect(0, 0, canvas.width, canvas.height);
-                context.font = "16px Arial";
-                context.fillStyle = "red";
-                context.fillText("No se pudo cargar la imagen.", 20, 40);
-            };
-        }
+        // Manejo de errores por si la imagen no se puede cargar
+        imagen.onerror = () => {
+            console.error(`Error al cargar la imagen desde: ${url}`);
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            context.font = "16px Arial";
+            context.fillStyle = "red";
+            context.fillText("No se pudo cargar la imagen.", 20, 40);
+        };
+    }
 
-        // 3. Asignamos los eventos de clic a cada botón
-        btnElefante.addEventListener('click', () => {
-            cargarImagenEnCanvas(urlElefante);
-        });
+    // 3. Asignamos los eventos de clic a cada botón
+    btnElefante.addEventListener('click', () => {
+        cargarImagenEnCanvas(urlElefante);
+    });
 
-        btnGato.addEventListener('click', () => {
-            cargarImagenEnCanvas(urlGato);
-        });
+    btnGato.addEventListener('click', () => {
+        cargarImagenEnCanvas(urlGato);
+    });
 
-        btnPerro.addEventListener('click', () => {
-            cargarImagenEnCanvas(urlPerro);
-        });
-        
-        // Opcional: Mostramos un mensaje inicial en el canvas
-        context.font = "10px Arial";
-        context.textAlign = "center";
-        context.fillText("Selecciona una pala para cargar su imagen", canvas.width / 2, canvas.height / 2);
-    </script>
-		
-		<div class="a">
-      <h1 style="background-
-<body>
-<div class="b">
-    <h1 style="background-color:floralwhite;">
-        Compartenos tu informacion para tener acceso exclusivo a nuestros productos
-    </h1>
-
-    <form id="padelForm"> 
-        <fieldset>
-            <legend>Unete a la Comunidad Padel</legend>
-            
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombres" placeholder="Nombre (s)">
-            <br><br>
-            
-            <label for="correo">Correo electrónico:</label>
-            <input type="email" id="correo" name="correo" placeholder="ejemplo@.com" required>
-            <br><br>
-            
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" placeholder="12-223-2987" required>
-        </fieldset>
-        <br><br>
-        <button type="submit">Enviar Formulario</button>
-    </form>
-</div>
+    btnPerro.addEventListener('click', () => {
+        cargarImagenEnCanvas(urlPerro);
+    });
+    
+    // Opcional: Mostramos un mensaje inicial en el canvas
+    context.font = "10px Arial";
+    context.textAlign = "center";
+    context.fillText("Selecciona una pala para cargar su imagen", canvas.width / 2, canvas.height / 2);
+</script>
+        </article>
+    </section>
+    
+    <div class="a">
+        <div class="b">
+            <h1 style="background-color:var(--beige-claro);">
+                Unete al movimiento de la Musica
+            </h1>
+            <form id="padelForm"> 
+                <fieldset>
+                    <legend>Travis comunity Padel</legend>
+                    
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombres" placeholder="Nombre (s)">
+                    <br><br>
+                    
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@.com" required>
+                    <br><br>
+                    
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="12-223-2987" required>
+                </fieldset>
+                <br><br>
+                <button type="submit">Enviar Formulario</button>
+            </form>
+        </div>
+    </div>
 
 <script>
     // URL de tu Google Apps Script
@@ -287,8 +300,7 @@ div.b {
 </script>
 
 <footer>
-    <p style="background-color:floralwhite">©️ 2025 PadelPlace. Todos los derechos reservados.</p>
+    <p>©️ 2025 Travis Shop. Todos los derechos reservados.</p>
 </footer>
 </body>
 </html>
-	
