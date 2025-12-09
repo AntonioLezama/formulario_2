@@ -227,10 +227,10 @@ div.b {
 <body>
 <div class="b">
     <h1 style="background-color:floralwhite;">
-        ¿Quieres unirte y enterarte más? ¡Registrate!
-	 </h1>
-		  
-     <form id="travisForm"> 
+        Compartenos tu informacion para tener acceso exclusivo a nuestros productos
+    </h1>
+
+    <form id="padelForm"> 
         <fieldset>
             <legend>Travis Shop</legend>
             
@@ -255,7 +255,7 @@ div.b {
     const scriptURL = 'https://script.google.com/macros/s/AKfycby0v25CsuegwkKeA4yYShCytO_vV3lL0-Bw_OaKI-gwS45jxNcd9WNRiObuhl3P1fLAIA/exec';
     
     // Obtenemos el formulario por su ID
-    const form = document.getElementById('padelForm');
+    const form = document.getElementById('TravisForm');
 
     form.addEventListener('submit', e => {
         e.preventDefault(); // Detiene el envío normal (para que no te redirija)
@@ -288,5 +288,7 @@ div.b {
             });
     });
 </script>
+
+<footer>
 </body>
 </html>
