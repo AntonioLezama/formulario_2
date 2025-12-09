@@ -136,9 +136,9 @@ div.b {
 </header>
 
   <nav>
-    <a href="file:///Macintosh HD/Users/leoaguilar/Downloads/HOME.html"><a href="file:///Users/leoaguilar/Downloads/HOME.html" target="file:///Users/leoaguilar/Downloads/HOME.html">Home</a></a>
-    <a href="file:///Macintosh HD/Users/leoaguilar/Downloads/CATALOGO.html">Catálogo</a>
-    <a href="file:///Macintosh HD/Users/leoaguilar/Downloads/SUCURSALES.html">Contacto</a>
+    <a href="file:///Macintosh HD/Users/s/HOME.html"><a href="file:///Users/leoaguilar/Downloads/HOME.html" target="file:///Users/leoaguilar/Downloads/HOME.html">Home</a></a>
+    <a href="file:///Macintosh HD/Users/lr/Downloads/CATALOGO.html">Catálogo</a>
+    <a href="file:///Macintosh HD/Users//Downloads/SUCURSALES.html">Contacto</a>
   </nav>
 	
 	<section>
@@ -228,14 +228,14 @@ div.b {
 <div class="b">
     <h1 style="background-color:floralwhite;">
         ¿Quieres unirte y enterarte más? ¡Registrate!
-    </h1>
-
-    <form id="padelForm"> 
+	 </h1>
+		  
+     <form id="travisForm"> 
         <fieldset>
-            <legend>Forma parte aquí</legend>
+            <legend>Travis Shop</legend>
             
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="usuario_nombre" placeholder="Nombre (s)">
+            <input type="text" id="nombre" name="nombres" placeholder="Nombre (s)">
             <br><br>
             
             <label for="correo">Correo electrónico:</label>
@@ -252,7 +252,7 @@ div.b {
 
 <script>
     // URL de tu Google Apps Script
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzvvBXUa1GclaJlWZEis9zcFR5Oe1F30krhtFrbu87Q2upar75lYb8IcjG1zfy8iAHj/exec';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz8aUHrIIgdhZhlx0lF-bkCJnzR0O93Ookd--v8SOpCZfb4W1R7CwTLprlRnZOMHY-Q/exec';
     
     // Obtenemos el formulario por su ID
     const form = document.getElementById('padelForm');
@@ -271,7 +271,7 @@ div.b {
                 // El script devuelve JSON con {"result": "success"}
                 if (response.ok) {
                     // Si es exitoso, mostramos una alerta y limpiamos el formulario.
-                    alert('¡Gracias! Tu registro ha sido enviado con éxito.');
+                    alert('¡Gracias por eso!.');
                     form.reset(); 
                 } else {
                     alert('Error: No se pudo conectar con el servidor de Google.');
@@ -288,9 +288,5 @@ div.b {
             });
     });
 </script>
-
-<footer>
-    <p style="background-color:floralwhite">©️ 2025 Travis shop. Todos los derechos reservados.</p>
-</footer>
 </body>
 </html>
